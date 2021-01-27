@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0868398325C1DCA800CC2D38 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0868398225C1DCA800CC2D38 /* Definition.swift */; };
+		0868398825C1DD1C00CC2D38 /* DoubleStringTuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0868398725C1DD1C00CC2D38 /* DoubleStringTuple.swift */; };
+		0868398C25C1DD8C00CC2D38 /* DefinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0868398B25C1DD8C00CC2D38 /* DefinationView.swift */; };
+		08AADFA825C067DC00D9326E /* MemorizeWordsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AADFA725C067DC00D9326E /* MemorizeWordsApp.swift */; };
+		08AADFAA25C067DD00D9326E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AADFA925C067DD00D9326E /* ContentView.swift */; };
+		08AADFAC25C067DF00D9326E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08AADFAB25C067DF00D9326E /* Assets.xcassets */; };
+		08AADFAF25C067DF00D9326E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08AADFAE25C067DF00D9326E /* Preview Assets.xcassets */; };
+		08AADFBF25C075DD00D9326E /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AADFBE25C075DD00D9326E /* Word.swift */; };
+		08AADFC825C08D0000D9326E /* RawDataUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AADFC725C08D0000D9326E /* RawDataUtils.swift */; };
+		08AADFCC25C092BB00D9326E /* MultiLabelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AADFCB25C092BB00D9326E /* MultiLabelClass.swift */; };
+		08AADFD025C093F300D9326E /* MultiClassBlock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AADFCF25C093F300D9326E /* MultiClassBlock.swift */; };
+		08AADFDA25C0986000D9326E /* MultiLabelTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AADFD925C0986000D9326E /* MultiLabelTableView.swift */; };
+		08AC36AF25C176C900E2F39B /* CognateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC36AE25C176C900E2F39B /* CognateView.swift */; };
+		08AC36B225C177D100E2F39B /* SynonymView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC36B125C177D100E2F39B /* SynonymView.swift */; };
+		08AC36B525C1785800E2F39B /* PhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC36B425C1785800E2F39B /* PhraseView.swift */; };
+		08AC36B925C178A400E2F39B /* DiscriminationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC36B825C178A400E2F39B /* DiscriminationView.swift */; };
+		08AC36BD25C1937E00E2F39B /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC36BC25C1937E00E2F39B /* ViewUtils.swift */; };
+		08BB592925C199420098F5E6 /* SwiftUIVisualEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 08BB592825C199420098F5E6 /* SwiftUIVisualEffects */; };
+		08C24B0F25C1C6DC0051C2C8 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C24B0E25C1C6DC0051C2C8 /* ModelData.swift */; };
+		08C24B1425C1CA980051C2C8 /* LeadingAlignmentText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C24B1325C1CA980051C2C8 /* LeadingAlignmentText.swift */; };
+		08C24B1725C1CF480051C2C8 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C24B1625C1CF480051C2C8 /* Profile.swift */; };
+		08E7230D25C1EF74007A02E9 /* toefl_vocab.json in Resources */ = {isa = PBXBuildFile; fileRef = 08E7230C25C1EF74007A02E9 /* toefl_vocab.json */; };
+		08E7231525C201B1007A02E9 /* Cognate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E7231425C201B1007A02E9 /* Cognate.swift */; };
+		08E7231825C203A2007A02E9 /* Synonym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E7231725C203A2007A02E9 /* Synonym.swift */; };
+		08E7231B25C205A8007A02E9 /* Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E7231A25C205A8007A02E9 /* Phrase.swift */; };
+		08E7231E25C2068D007A02E9 /* Discrimination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E7231D25C2068D007A02E9 /* Discrimination.swift */; };
+		08E7232125C20981007A02E9 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E7232025C20981007A02E9 /* StringUtils.swift */; };
+		08F0A9F325C19CE400BE0E59 /* VisualEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 08F0A9F225C19CE400BE0E59 /* VisualEffects */; };
+		08F0A9F825C1A84C00BE0E59 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F0A9F725C1A84C00BE0E59 /* WordView.swift */; };
+		08F0A9FC25C1AC8400BE0E59 /* LearningPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F0A9FB25C1AC8400BE0E59 /* LearningPage.swift */; };
+		08F0A9FF25C1ADA200BE0E59 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F0A9FE25C1ADA200BE0E59 /* SettingsPage.swift */; };
+		08F0AA0225C1B03E00BE0E59 /* WordListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F0AA0125C1B03E00BE0E59 /* WordListPage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0868398225C1DCA800CC2D38 /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
+		0868398725C1DD1C00CC2D38 /* DoubleStringTuple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleStringTuple.swift; sourceTree = "<group>"; };
+		0868398B25C1DD8C00CC2D38 /* DefinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinationView.swift; sourceTree = "<group>"; };
+		08AADFA425C067DC00D9326E /* MemorizeWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemorizeWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08AADFA725C067DC00D9326E /* MemorizeWordsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeWordsApp.swift; sourceTree = "<group>"; };
+		08AADFA925C067DD00D9326E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		08AADFAB25C067DF00D9326E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08AADFAE25C067DF00D9326E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		08AADFB025C067DF00D9326E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08AADFBE25C075DD00D9326E /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		08AADFC725C08D0000D9326E /* RawDataUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawDataUtils.swift; sourceTree = "<group>"; };
+		08AADFCB25C092BB00D9326E /* MultiLabelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLabelClass.swift; sourceTree = "<group>"; };
+		08AADFCF25C093F300D9326E /* MultiClassBlock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiClassBlock.swift; sourceTree = "<group>"; };
+		08AADFD925C0986000D9326E /* MultiLabelTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLabelTableView.swift; sourceTree = "<group>"; };
+		08AC36AE25C176C900E2F39B /* CognateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognateView.swift; sourceTree = "<group>"; };
+		08AC36B125C177D100E2F39B /* SynonymView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynonymView.swift; sourceTree = "<group>"; };
+		08AC36B425C1785800E2F39B /* PhraseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhraseView.swift; sourceTree = "<group>"; };
+		08AC36B825C178A400E2F39B /* DiscriminationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscriminationView.swift; sourceTree = "<group>"; };
+		08AC36BC25C1937E00E2F39B /* ViewUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		08C24B0E25C1C6DC0051C2C8 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		08C24B1325C1CA980051C2C8 /* LeadingAlignmentText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeadingAlignmentText.swift; sourceTree = "<group>"; };
+		08C24B1625C1CF480051C2C8 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		08E7230C25C1EF74007A02E9 /* toefl_vocab.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = toefl_vocab.json; sourceTree = "<group>"; };
+		08E7231425C201B1007A02E9 /* Cognate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cognate.swift; sourceTree = "<group>"; };
+		08E7231725C203A2007A02E9 /* Synonym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Synonym.swift; sourceTree = "<group>"; };
+		08E7231A25C205A8007A02E9 /* Phrase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phrase.swift; sourceTree = "<group>"; };
+		08E7231D25C2068D007A02E9 /* Discrimination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Discrimination.swift; sourceTree = "<group>"; };
+		08E7232025C20981007A02E9 /* StringUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		08F0A9F725C1A84C00BE0E59 /* WordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordView.swift; sourceTree = "<group>"; };
+		08F0A9FB25C1AC8400BE0E59 /* LearningPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningPage.swift; sourceTree = "<group>"; };
+		08F0A9FE25C1ADA200BE0E59 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
+		08F0AA0125C1B03E00BE0E59 /* WordListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListPage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08AADFA125C067DC00D9326E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BB592925C199420098F5E6 /* SwiftUIVisualEffects in Frameworks */,
+				08F0A9F325C19CE400BE0E59 /* VisualEffects in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0868398125C1DC4E00CC2D38 /* Word */ = {
+			isa = PBXGroup;
+			children = (
+				08F0A9F625C1A82F00BE0E59 /* Relation */,
+				08F0A9F725C1A84C00BE0E59 /* WordView.swift */,
+				0868398B25C1DD8C00CC2D38 /* DefinationView.swift */,
+			);
+			path = Word;
+			sourceTree = "<group>";
+		};
+		0868398625C1DCD100CC2D38 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				08AADFCF25C093F300D9326E /* MultiClassBlock.swift */,
+				08AADFCB25C092BB00D9326E /* MultiLabelClass.swift */,
+				0868398725C1DD1C00CC2D38 /* DoubleStringTuple.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		08AADF9B25C067DC00D9326E = {
+			isa = PBXGroup;
+			children = (
+				08AADFA625C067DC00D9326E /* MemorizeWords */,
+				08AADFA525C067DC00D9326E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08AADFA525C067DC00D9326E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08AADFA425C067DC00D9326E /* MemorizeWords.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08AADFA625C067DC00D9326E /* MemorizeWords */ = {
+			isa = PBXGroup;
+			children = (
+				08AADFD225C097EE00D9326E /* Views */,
+				08AADFB925C068EF00D9326E /* Models */,
+				08AADFC625C08BFC00D9326E /* Utils */,
+				08AADFBD25C06A9300D9326E /* Resources */,
+				08AADFA725C067DC00D9326E /* MemorizeWordsApp.swift */,
+				08AADFAB25C067DF00D9326E /* Assets.xcassets */,
+				08AADFB025C067DF00D9326E /* Info.plist */,
+				08AADFAD25C067DF00D9326E /* Preview Content */,
+			);
+			path = MemorizeWords;
+			sourceTree = "<group>";
+		};
+		08AADFAD25C067DF00D9326E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				08AADFAE25C067DF00D9326E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		08AADFB925C068EF00D9326E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				08E7231125C20173007A02E9 /* Word */,
+				0868398625C1DCD100CC2D38 /* Helper */,
+				08C24B0E25C1C6DC0051C2C8 /* ModelData.swift */,
+				08AADFBE25C075DD00D9326E /* Word.swift */,
+				08C24B1625C1CF480051C2C8 /* Profile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		08AADFBD25C06A9300D9326E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				08E7230C25C1EF74007A02E9 /* toefl_vocab.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		08AADFC625C08BFC00D9326E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				08AADFC725C08D0000D9326E /* RawDataUtils.swift */,
+				08AC36BC25C1937E00E2F39B /* ViewUtils.swift */,
+				08E7232025C20981007A02E9 /* StringUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		08AADFD225C097EE00D9326E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0868398125C1DC4E00CC2D38 /* Word */,
+				08F0A9FA25C1AC4200BE0E59 /* Helpers */,
+				08F0A9FB25C1AC8400BE0E59 /* LearningPage.swift */,
+				08F0A9FE25C1ADA200BE0E59 /* SettingsPage.swift */,
+				08F0AA0125C1B03E00BE0E59 /* WordListPage.swift */,
+				08AADFA925C067DD00D9326E /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		08E7231125C20173007A02E9 /* Word */ = {
+			isa = PBXGroup;
+			children = (
+				08E7231225C20190007A02E9 /* Relation */,
+				0868398225C1DCA800CC2D38 /* Definition.swift */,
+			);
+			path = Word;
+			sourceTree = "<group>";
+		};
+		08E7231225C20190007A02E9 /* Relation */ = {
+			isa = PBXGroup;
+			children = (
+				08E7231425C201B1007A02E9 /* Cognate.swift */,
+				08E7231725C203A2007A02E9 /* Synonym.swift */,
+				08E7231A25C205A8007A02E9 /* Phrase.swift */,
+				08E7231D25C2068D007A02E9 /* Discrimination.swift */,
+			);
+			path = Relation;
+			sourceTree = "<group>";
+		};
+		08F0A9F625C1A82F00BE0E59 /* Relation */ = {
+			isa = PBXGroup;
+			children = (
+				08AC36AE25C176C900E2F39B /* CognateView.swift */,
+				08AC36B125C177D100E2F39B /* SynonymView.swift */,
+				08AC36B425C1785800E2F39B /* PhraseView.swift */,
+				08AC36B825C178A400E2F39B /* DiscriminationView.swift */,
+			);
+			path = Relation;
+			sourceTree = "<group>";
+		};
+		08F0A9FA25C1AC4200BE0E59 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				08AADFD925C0986000D9326E /* MultiLabelTableView.swift */,
+				08C24B1325C1CA980051C2C8 /* LeadingAlignmentText.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08AADFA325C067DC00D9326E /* MemorizeWords */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08AADFB325C067DF00D9326E /* Build configuration list for PBXNativeTarget "MemorizeWords" */;
+			buildPhases = (
+				08AADFA025C067DC00D9326E /* Sources */,
+				08AADFA125C067DC00D9326E /* Frameworks */,
+				08AADFA225C067DC00D9326E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemorizeWords;
+			packageProductDependencies = (
+				08BB592825C199420098F5E6 /* SwiftUIVisualEffects */,
+				08F0A9F225C19CE400BE0E59 /* VisualEffects */,
+			);
+			productName = MemorizeWords;
+			productReference = 08AADFA425C067DC00D9326E /* MemorizeWords.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08AADF9C25C067DC00D9326E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					08AADFA325C067DC00D9326E = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = 08AADF9F25C067DC00D9326E /* Build configuration list for PBXProject "MemorizeWords" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08AADF9B25C067DC00D9326E;
+			packageReferences = (
+				08BB592725C199420098F5E6 /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */,
+				08F0A9F125C19CE400BE0E59 /* XCRemoteSwiftPackageReference "VisualEffects" */,
+			);
+			productRefGroup = 08AADFA525C067DC00D9326E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08AADFA325C067DC00D9326E /* MemorizeWords */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08AADFA225C067DC00D9326E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08AADFAF25C067DF00D9326E /* Preview Assets.xcassets in Resources */,
+				08E7230D25C1EF74007A02E9 /* toefl_vocab.json in Resources */,
+				08AADFAC25C067DF00D9326E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08AADFA025C067DC00D9326E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E7232125C20981007A02E9 /* StringUtils.swift in Sources */,
+				08AC36BD25C1937E00E2F39B /* ViewUtils.swift in Sources */,
+				08C24B1725C1CF480051C2C8 /* Profile.swift in Sources */,
+				0868398825C1DD1C00CC2D38 /* DoubleStringTuple.swift in Sources */,
+				08AADFC825C08D0000D9326E /* RawDataUtils.swift in Sources */,
+				08C24B0F25C1C6DC0051C2C8 /* ModelData.swift in Sources */,
+				08E7231825C203A2007A02E9 /* Synonym.swift in Sources */,
+				0868398325C1DCA800CC2D38 /* Definition.swift in Sources */,
+				08AADFAA25C067DD00D9326E /* ContentView.swift in Sources */,
+				08AADFDA25C0986000D9326E /* MultiLabelTableView.swift in Sources */,
+				08F0A9FC25C1AC8400BE0E59 /* LearningPage.swift in Sources */,
+				08AADFA825C067DC00D9326E /* MemorizeWordsApp.swift in Sources */,
+				08E7231B25C205A8007A02E9 /* Phrase.swift in Sources */,
+				08AC36B525C1785800E2F39B /* PhraseView.swift in Sources */,
+				08AC36B925C178A400E2F39B /* DiscriminationView.swift in Sources */,
+				08AADFCC25C092BB00D9326E /* MultiLabelClass.swift in Sources */,
+				08AC36AF25C176C900E2F39B /* CognateView.swift in Sources */,
+				08AC36B225C177D100E2F39B /* SynonymView.swift in Sources */,
+				08F0A9F825C1A84C00BE0E59 /* WordView.swift in Sources */,
+				08E7231525C201B1007A02E9 /* Cognate.swift in Sources */,
+				0868398C25C1DD8C00CC2D38 /* DefinationView.swift in Sources */,
+				08C24B1425C1CA980051C2C8 /* LeadingAlignmentText.swift in Sources */,
+				08AADFD025C093F300D9326E /* MultiClassBlock.swift in Sources */,
+				08E7231E25C2068D007A02E9 /* Discrimination.swift in Sources */,
+				08F0A9FF25C1ADA200BE0E59 /* SettingsPage.swift in Sources */,
+				08F0AA0225C1B03E00BE0E59 /* WordListPage.swift in Sources */,
+				08AADFBF25C075DD00D9326E /* Word.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		08AADFB125C067DF00D9326E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08AADFB225C067DF00D9326E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08AADFB425C067DF00D9326E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MemorizeWords/Preview Content\"";
+				DEVELOPMENT_TEAM = 98UH75S5K2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MemorizeWords/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sicer.MemorizeWords;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08AADFB525C067DF00D9326E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"MemorizeWords/Preview Content\"";
+				DEVELOPMENT_TEAM = 98UH75S5K2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = MemorizeWords/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sicer.MemorizeWords;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08AADF9F25C067DC00D9326E /* Build configuration list for PBXProject "MemorizeWords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08AADFB125C067DF00D9326E /* Debug */,
+				08AADFB225C067DF00D9326E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08AADFB325C067DF00D9326E /* Build configuration list for PBXNativeTarget "MemorizeWords" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08AADFB425C067DF00D9326E /* Debug */,
+				08AADFB525C067DF00D9326E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		08BB592725C199420098F5E6 /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lucasbrown/swiftui-visual-effects.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+		08F0A9F125C19CE400BE0E59 /* XCRemoteSwiftPackageReference "VisualEffects" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/VisualEffects.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		08BB592825C199420098F5E6 /* SwiftUIVisualEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08BB592725C199420098F5E6 /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */;
+			productName = SwiftUIVisualEffects;
+		};
+		08F0A9F225C19CE400BE0E59 /* VisualEffects */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 08F0A9F125C19CE400BE0E59 /* XCRemoteSwiftPackageReference "VisualEffects" */;
+			productName = VisualEffects;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 08AADF9C25C067DC00D9326E /* Project object */;
+}

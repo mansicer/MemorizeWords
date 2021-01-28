@@ -86,12 +86,9 @@ struct MultiCardView: View {
 struct DateView: View {
     var today: String {
         let today = Date()// 获取格林威治时间（GMT）/ 标准时间
-        let zone = NSTimeZone.system
-        let interval = zone.secondsFromGMT()
-        let now = today.addingTimeInterval(TimeInterval(interval))
         let dateformatter = DateFormatter()
         dateformatter.dateFormat = "YYYY-MM-dd"// 自定义时间格式
-        let time = dateformatter.string(from: now)
+        let time = dateformatter.string(from: today)
         return time
     }
     var body: some View {

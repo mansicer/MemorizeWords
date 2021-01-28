@@ -38,7 +38,7 @@ struct WordView: View {
             Spacer(minLength: 20)
             
             // MARK: word definition
-            DefinitionView(definition: word.definitionStruct)
+            DefinitionView(definition: word.definitionStruct, hasDivider: true)
                 .padding(5)
                 .font(.headline)
             
@@ -53,6 +53,23 @@ struct WordView: View {
                     }
                         .pickerStyle(SegmentedPickerStyle())
                     word.getRelationView(of: selectedRelationIndex)
+                        .padding(8)
+                }
+                .background(ViewUtils.getViewBlurBackground())
+            }
+            
+            // MARK: word sentence
+            if (word.hasSentences) {
+                Spacer(minLength: 20)
+                VStack {
+                    Picker("sentences", selection: $selectedSentencesIndex) {
+                        ForEach(word.sentencePickerList.indices) {
+                            idx in
+                            Text(word.sentencePickerList[idx]).tag(idx)
+                        }
+                    }
+                    .pickerStyle(SegmentedPickerStyle())
+                    word.getSentenceView(of: selectedSentencesIndex)
                         .padding(8)
                 }
                 .background(ViewUtils.getViewBlurBackground())

@@ -52,8 +52,13 @@ struct CardView: View {
                     }
                 }
                 .padding(.horizontal)
-                DefinitionView(definition: word.definitionStruct)
+                DefinitionView(definition: word.definitionStruct, hasDivider: false)
                     .font(.headline)
+                Divider()
+                if let bilingual = word.bilingual {
+                    BilingualView(bilingual: bilingual)
+                }
+                
             }
             .padding(10)
             .background(Color.white)

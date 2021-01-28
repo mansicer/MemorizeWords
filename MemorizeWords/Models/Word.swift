@@ -96,6 +96,36 @@ extension Word {
             fatalError("Can't find relation \(info)")
         }
     }
+    
+    var sentencePickerList: [String] {
+        var ret: [String] = []
+        if self.bilingual != nil {
+            ret.append("双语例句")
+        }
+        if self.spoken != nil {
+            ret.append("原声例句")
+        }
+        if self.authority != nil {
+            ret.append("权威例句")
+        }
+        return ret
+    }
+    
+    @ViewBuilder func getSentenceView(of index: Int) -> some View {
+        let info = sentencePickerList[index]
+        if info == "双语例句" {
+            BilingualView(bilingual: self.bilingual!)
+        }
+        else if info == "原声例句" {
+            SpokenView(spoken: self.spoken!)
+        }
+        else if info == "权威例句" {
+            AuthorityView(authority: self.authority!)
+        }
+        else {
+            fatalError("Can't find sentence part \(info)")
+        }
+    }
 }
 
 // MARK: definition reshape
@@ -273,6 +303,65 @@ extension Word {
                 ))
             }
             return Phrase(content: content)
+        }
+    }
+}
+
+// MARK: sentence information extension
+extension Word {
+    var bilingual: Bilingual? {
+        let item = sentences.filter {
+            k, v in
+            k == "双语例句"
+        }
+        if item.isEmpty {
+            return nil
+        }
+        else {
+            let value = item.values.first!
+            var content = [DoubleStringTuple]()
+            for sentence in value {
+                let tuple = DoubleStringTuple(s1: sentence[0], s2: sentence[1])
+                content.append(tuple)
+            }
+            return Bilingual(content: content)
+        }
+    }
+    
+    var spoken: Spoken? {
+        let item = sentences.filter {
+            k, v in
+            k == "原声例句"
+        }
+        if item.isEmpty {
+            return nil
+        }
+        else {
+            let value = item.values.first!
+            var content = [DoubleStringTuple]()
+            for sentence in value {
+                let tuple = DoubleStringTuple(s1: sentence[0], s2: sentence[1])
+                content.append(tuple)
+            }
+            return Spoken(content: content)
+        }
+    }
+    
+    var authority: Authority? {
+        let item = sentences.filter {
+            k, v in
+            k == "权威例句"
+        }
+        if item.isEmpty {
+            return nil
+        }
+        else {
+            let value = item.values.first!
+            var content = [String]()
+            for sentence in value {
+                content.append(sentence[0])
+            }
+            return Authority(content: content)
         }
     }
 }

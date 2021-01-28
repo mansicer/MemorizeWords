@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DefinitionView: View {
     let definition: Definition
+    let hasDivider: Bool
     var needsTwoColumns: Bool {
         definition.definations.filter {
             element in
@@ -26,7 +27,7 @@ struct DefinitionView: View {
                     leadingItemWidth: 50,
                     alignment: .leading
                 )
-                if idx < definition.definations.count - 1 {
+                if hasDivider {
                     Divider()
                 }
             }

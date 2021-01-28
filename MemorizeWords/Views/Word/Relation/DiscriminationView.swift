@@ -28,12 +28,10 @@ struct DiscriminationView: View {
                         )
                     }
                 }
-                .listRowBackground(Color.clear)
-                .background(Color.clear)
             }
-            
+            .cornerRadius(10)
         }
-        .frame(minHeight: 300)
+        .frame(minHeight: 400)
     }
 }
 

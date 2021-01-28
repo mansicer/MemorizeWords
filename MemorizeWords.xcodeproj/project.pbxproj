@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080500F825C2A46300E7E550 /* Spoken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080500F725C2A46300E7E550 /* Spoken.swift */; };
+		080500FB25C2A52900E7E550 /* Authority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080500FA25C2A52900E7E550 /* Authority.swift */; };
+		080500FF25C2A59B00E7E550 /* BilingualView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080500FE25C2A59B00E7E550 /* BilingualView.swift */; };
+		0805010625C2A60000E7E550 /* SpokenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0805010525C2A60000E7E550 /* SpokenView.swift */; };
+		0805010925C2A63A00E7E550 /* AuthorityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0805010825C2A63A00E7E550 /* AuthorityView.swift */; };
 		0868398325C1DCA800CC2D38 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0868398225C1DCA800CC2D38 /* Definition.swift */; };
 		0868398825C1DD1C00CC2D38 /* DoubleStringTuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0868398725C1DD1C00CC2D38 /* DoubleStringTuple.swift */; };
 		0868398C25C1DD8C00CC2D38 /* DefinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0868398B25C1DD8C00CC2D38 /* DefinationView.swift */; };
@@ -17,6 +22,7 @@
 		087CAC2D25C28D250083EBB8 /* MultiCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CAC2C25C28D250083EBB8 /* MultiCardView.swift */; };
 		087CAC3025C29D290083EBB8 /* WordRecommender.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 087CAC2F25C29D290083EBB8 /* WordRecommender.mlmodel */; };
 		087CAC3325C29D5C0083EBB8 /* FavoritePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CAC3225C29D5C0083EBB8 /* FavoritePage.swift */; };
+		087CAC3625C2A2770083EBB8 /* Bilingual.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CAC3525C2A2770083EBB8 /* Bilingual.swift */; };
 		08AADFA825C067DC00D9326E /* MemorizeWordsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AADFA725C067DC00D9326E /* MemorizeWordsApp.swift */; };
 		08AADFAA25C067DD00D9326E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AADFA925C067DD00D9326E /* ContentView.swift */; };
 		08AADFAC25C067DF00D9326E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08AADFAB25C067DF00D9326E /* Assets.xcassets */; };
@@ -31,7 +37,6 @@
 		08AC36B525C1785800E2F39B /* PhraseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC36B425C1785800E2F39B /* PhraseView.swift */; };
 		08AC36B925C178A400E2F39B /* DiscriminationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC36B825C178A400E2F39B /* DiscriminationView.swift */; };
 		08AC36BD25C1937E00E2F39B /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AC36BC25C1937E00E2F39B /* ViewUtils.swift */; };
-		08BB592925C199420098F5E6 /* SwiftUIVisualEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 08BB592825C199420098F5E6 /* SwiftUIVisualEffects */; };
 		08C24B0F25C1C6DC0051C2C8 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C24B0E25C1C6DC0051C2C8 /* ModelData.swift */; };
 		08C24B1425C1CA980051C2C8 /* LeadingAlignmentText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C24B1325C1CA980051C2C8 /* LeadingAlignmentText.swift */; };
 		08C24B1725C1CF480051C2C8 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C24B1625C1CF480051C2C8 /* Profile.swift */; };
@@ -41,7 +46,6 @@
 		08E7231B25C205A8007A02E9 /* Phrase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E7231A25C205A8007A02E9 /* Phrase.swift */; };
 		08E7231E25C2068D007A02E9 /* Discrimination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E7231D25C2068D007A02E9 /* Discrimination.swift */; };
 		08E7232125C20981007A02E9 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E7232025C20981007A02E9 /* StringUtils.swift */; };
-		08F0A9F325C19CE400BE0E59 /* VisualEffects in Frameworks */ = {isa = PBXBuildFile; productRef = 08F0A9F225C19CE400BE0E59 /* VisualEffects */; };
 		08F0A9F825C1A84C00BE0E59 /* WordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F0A9F725C1A84C00BE0E59 /* WordView.swift */; };
 		08F0A9FC25C1AC8400BE0E59 /* LearningPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F0A9FB25C1AC8400BE0E59 /* LearningPage.swift */; };
 		08F0A9FF25C1ADA200BE0E59 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F0A9FE25C1ADA200BE0E59 /* SettingsPage.swift */; };
@@ -49,6 +53,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		080500F725C2A46300E7E550 /* Spoken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spoken.swift; sourceTree = "<group>"; };
+		080500FA25C2A52900E7E550 /* Authority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authority.swift; sourceTree = "<group>"; };
+		080500FE25C2A59B00E7E550 /* BilingualView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BilingualView.swift; sourceTree = "<group>"; };
+		0805010525C2A60000E7E550 /* SpokenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpokenView.swift; sourceTree = "<group>"; };
+		0805010825C2A63A00E7E550 /* AuthorityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorityView.swift; sourceTree = "<group>"; };
 		0868398225C1DCA800CC2D38 /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
 		0868398725C1DD1C00CC2D38 /* DoubleStringTuple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleStringTuple.swift; sourceTree = "<group>"; };
 		0868398B25C1DD8C00CC2D38 /* DefinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinationView.swift; sourceTree = "<group>"; };
@@ -59,6 +68,7 @@
 		087CAC2C25C28D250083EBB8 /* MultiCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCardView.swift; sourceTree = "<group>"; };
 		087CAC2F25C29D290083EBB8 /* WordRecommender.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WordRecommender.mlmodel; sourceTree = SOURCE_ROOT; };
 		087CAC3225C29D5C0083EBB8 /* FavoritePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePage.swift; sourceTree = "<group>"; };
+		087CAC3525C2A2770083EBB8 /* Bilingual.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bilingual.swift; sourceTree = "<group>"; };
 		08AADFA425C067DC00D9326E /* MemorizeWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemorizeWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08AADFA725C067DC00D9326E /* MemorizeWordsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeWordsApp.swift; sourceTree = "<group>"; };
 		08AADFA925C067DD00D9326E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,17 +105,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08BB592925C199420098F5E6 /* SwiftUIVisualEffects in Frameworks */,
-				08F0A9F325C19CE400BE0E59 /* VisualEffects in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		080500FD25C2A58E00E7E550 /* Sentence */ = {
+			isa = PBXGroup;
+			children = (
+				080500FE25C2A59B00E7E550 /* BilingualView.swift */,
+				0805010525C2A60000E7E550 /* SpokenView.swift */,
+				0805010825C2A63A00E7E550 /* AuthorityView.swift */,
+			);
+			path = Sentence;
+			sourceTree = "<group>";
+		};
 		0868398125C1DC4E00CC2D38 /* Word */ = {
 			isa = PBXGroup;
 			children = (
+				080500FD25C2A58E00E7E550 /* Sentence */,
 				08F0A9F625C1A82F00BE0E59 /* Relation */,
 				08F0A9F725C1A84C00BE0E59 /* WordView.swift */,
 				0868398B25C1DD8C00CC2D38 /* DefinationView.swift */,
@@ -139,6 +158,16 @@
 				087CAC2425C25E070083EBB8 /* LearningNumberSetting.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		087CAC3825C2A27C0083EBB8 /* Sentence */ = {
+			isa = PBXGroup;
+			children = (
+				087CAC3525C2A2770083EBB8 /* Bilingual.swift */,
+				080500F725C2A46300E7E550 /* Spoken.swift */,
+				080500FA25C2A52900E7E550 /* Authority.swift */,
+			);
+			path = Sentence;
 			sourceTree = "<group>";
 		};
 		08AADF9B25C067DC00D9326E = {
@@ -230,6 +259,7 @@
 		08E7231125C20173007A02E9 /* Word */ = {
 			isa = PBXGroup;
 			children = (
+				087CAC3825C2A27C0083EBB8 /* Sentence */,
 				08E7231225C20190007A02E9 /* Relation */,
 				0868398225C1DCA800CC2D38 /* Definition.swift */,
 			);
@@ -285,8 +315,6 @@
 			);
 			name = MemorizeWords;
 			packageProductDependencies = (
-				08BB592825C199420098F5E6 /* SwiftUIVisualEffects */,
-				08F0A9F225C19CE400BE0E59 /* VisualEffects */,
 			);
 			productName = MemorizeWords;
 			productReference = 08AADFA425C067DC00D9326E /* MemorizeWords.app */;
@@ -316,8 +344,6 @@
 			);
 			mainGroup = 08AADF9B25C067DC00D9326E;
 			packageReferences = (
-				08BB592725C199420098F5E6 /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */,
-				08F0A9F125C19CE400BE0E59 /* XCRemoteSwiftPackageReference "VisualEffects" */,
 			);
 			productRefGroup = 08AADFA525C067DC00D9326E /* Products */;
 			projectDirPath = "";
@@ -348,7 +374,10 @@
 			files = (
 				08E7232125C20981007A02E9 /* StringUtils.swift in Sources */,
 				08AC36BD25C1937E00E2F39B /* ViewUtils.swift in Sources */,
+				0805010925C2A63A00E7E550 /* AuthorityView.swift in Sources */,
 				08C24B1725C1CF480051C2C8 /* Profile.swift in Sources */,
+				080500F825C2A46300E7E550 /* Spoken.swift in Sources */,
+				0805010625C2A60000E7E550 /* SpokenView.swift in Sources */,
 				087CAC2125C25B8F0083EBB8 /* ButtonStyle.swift in Sources */,
 				0868398825C1DD1C00CC2D38 /* DoubleStringTuple.swift in Sources */,
 				08AADFC825C08D0000D9326E /* RawDataUtils.swift in Sources */,
@@ -361,6 +390,7 @@
 				08AADFAA25C067DD00D9326E /* ContentView.swift in Sources */,
 				087CAC2525C25E070083EBB8 /* LearningNumberSetting.swift in Sources */,
 				08AADFDA25C0986000D9326E /* MultiLabelTableView.swift in Sources */,
+				080500FF25C2A59B00E7E550 /* BilingualView.swift in Sources */,
 				087CAC2D25C28D250083EBB8 /* MultiCardView.swift in Sources */,
 				08F0A9FC25C1AC8400BE0E59 /* LearningPage.swift in Sources */,
 				08AADFA825C067DC00D9326E /* MemorizeWordsApp.swift in Sources */,
@@ -368,6 +398,7 @@
 				08AC36B525C1785800E2F39B /* PhraseView.swift in Sources */,
 				08AC36B925C178A400E2F39B /* DiscriminationView.swift in Sources */,
 				08AADFCC25C092BB00D9326E /* MultiLabelClass.swift in Sources */,
+				080500FB25C2A52900E7E550 /* Authority.swift in Sources */,
 				08AC36AF25C176C900E2F39B /* CognateView.swift in Sources */,
 				08AC36B225C177D100E2F39B /* SynonymView.swift in Sources */,
 				08F0A9F825C1A84C00BE0E59 /* WordView.swift in Sources */,
@@ -379,6 +410,7 @@
 				08E7231E25C2068D007A02E9 /* Discrimination.swift in Sources */,
 				08F0A9FF25C1ADA200BE0E59 /* SettingsPage.swift in Sources */,
 				08F0AA0225C1B03E00BE0E59 /* WordListPage.swift in Sources */,
+				087CAC3625C2A2770083EBB8 /* Bilingual.swift in Sources */,
 				08AADFBF25C075DD00D9326E /* Word.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -568,38 +600,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		08BB592725C199420098F5E6 /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/lucasbrown/swiftui-visual-effects.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.3;
-			};
-		};
-		08F0A9F125C19CE400BE0E59 /* XCRemoteSwiftPackageReference "VisualEffects" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/twostraws/VisualEffects.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.3;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		08BB592825C199420098F5E6 /* SwiftUIVisualEffects */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 08BB592725C199420098F5E6 /* XCRemoteSwiftPackageReference "swiftui-visual-effects" */;
-			productName = SwiftUIVisualEffects;
-		};
-		08F0A9F225C19CE400BE0E59 /* VisualEffects */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 08F0A9F125C19CE400BE0E59 /* XCRemoteSwiftPackageReference "VisualEffects" */;
-			productName = VisualEffects;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 08AADF9C25C067DC00D9326E /* Project object */;
 }

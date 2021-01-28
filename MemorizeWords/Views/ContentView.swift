@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selection: Tab = .wordList
+    @State private var selection: Tab = .start
     
     enum Tab {
         case start

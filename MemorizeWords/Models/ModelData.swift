@@ -7,12 +7,18 @@
 
 import Foundation
 
+struct DataKey {
+    static let wordCount = "wordCount"
+    static let numOfWordEveryLearning = "numOfWordEveryLearning"
+}
+
 final class ModelData: ObservableObject {
     var TOEFLVocabulary: [Word] = loadVocabulary("toefl_vocab.json")
     @Published var profile = Profile()
     init() {
         let defaults = UserDefaults.standard
         
+        // MARK: initialize word count
         if let wordCount = defaults.dictionary(forKey: DataKey.wordCount) as? [String: Int] {
             profile.wordCount = wordCount
             print("load \(wordCount.count) words from user data successfully")
@@ -28,6 +34,15 @@ final class ModelData: ObservableObject {
             defaults.setValue(wordCount, forKey: DataKey.wordCount)
             print("initialize \(wordCount.count) words to user data")
         }
+    }
+    
+    func getLearningWords() -> [Word] {
+        var ret = [Word]()
+        let newVocab = TOEFLVocabulary.shuffled()
+        for i in 0..<profile.numOfWordEveryLearning {
+            ret.append(newVocab[i])
+        }
+        return ret
     }
     
     func getWordCount(_ name: String) -> Int {

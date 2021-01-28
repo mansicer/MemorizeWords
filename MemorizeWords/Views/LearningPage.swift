@@ -17,31 +17,33 @@ struct LearningPage: View {
     }
     
     var body: some View {
-        VStack {
-            Spacer()
-            Text("你已经学习了")
-                .font(.title)
-                .padding(5)
-            Text("\(numOfLearnedWords)个")
-                .font(.largeTitle)
-                .foregroundColor(.red)
-            Text("单词")
-                .font(.title)
-                .padding(5)
-            Spacer()
-            Button(action: {
-                
-            }, label: {
-                ZStack {
-                    Circle()
-                        .foregroundColor(Color(red: 0, green: 0.6, blue: 0.9))
-                        .frame(width: 150, height: 150, alignment: .center)
-                    Text("Start")
-                        .font(.system(size: 50))
-                        .foregroundColor(.white)
-                }
-            })
-            Spacer()
+        NavigationView() {
+            VStack {
+                Spacer()
+                Text("你已经学习了")
+                    .font(.title)
+                    .padding(5)
+                Text("\(numOfLearnedWords)个")
+                    .font(.largeTitle)
+                    .foregroundColor(.red)
+                Text("单词")
+                    .font(.title)
+                    .padding(5)
+                Spacer()
+                NavigationLink(destination:
+                    WordChoosingView(words: modelData.getLearningWords())
+                , label: {
+                    ZStack {
+                        Circle()
+                            .foregroundColor(Color(red: 0, green: 0.6, blue: 0.9))
+                            .frame(width: 150, height: 150, alignment: .center)
+                        Text("开始\n学习")
+                            .font(.system(size: 35))
+                            .foregroundColor(.white)
+                    }
+                })
+                Spacer()
+            }
         }
     }
 }

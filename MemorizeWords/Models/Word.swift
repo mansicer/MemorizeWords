@@ -7,9 +7,6 @@
 
 import SwiftUI
 
-struct DataKey {
-    static let wordCount = "wordCount"
-}
 
 struct Word: Hashable, Codable, Identifiable {
     var id: String

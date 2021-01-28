@@ -10,6 +10,9 @@
 		0868398325C1DCA800CC2D38 /* Definition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0868398225C1DCA800CC2D38 /* Definition.swift */; };
 		0868398825C1DD1C00CC2D38 /* DoubleStringTuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0868398725C1DD1C00CC2D38 /* DoubleStringTuple.swift */; };
 		0868398C25C1DD8C00CC2D38 /* DefinationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0868398B25C1DD8C00CC2D38 /* DefinationView.swift */; };
+		087CAC1D25C258A60083EBB8 /* WordChoosingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CAC1C25C258A60083EBB8 /* WordChoosingView.swift */; };
+		087CAC2125C25B8F0083EBB8 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CAC2025C25B8F0083EBB8 /* ButtonStyle.swift */; };
+		087CAC2525C25E070083EBB8 /* LearningNumberSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CAC2425C25E070083EBB8 /* LearningNumberSetting.swift */; };
 		08AADFA825C067DC00D9326E /* MemorizeWordsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AADFA725C067DC00D9326E /* MemorizeWordsApp.swift */; };
 		08AADFAA25C067DD00D9326E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AADFA925C067DD00D9326E /* ContentView.swift */; };
 		08AADFAC25C067DF00D9326E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08AADFAB25C067DF00D9326E /* Assets.xcassets */; };
@@ -45,6 +48,9 @@
 		0868398225C1DCA800CC2D38 /* Definition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definition.swift; sourceTree = "<group>"; };
 		0868398725C1DD1C00CC2D38 /* DoubleStringTuple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleStringTuple.swift; sourceTree = "<group>"; };
 		0868398B25C1DD8C00CC2D38 /* DefinationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefinationView.swift; sourceTree = "<group>"; };
+		087CAC1C25C258A60083EBB8 /* WordChoosingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordChoosingView.swift; sourceTree = "<group>"; };
+		087CAC2025C25B8F0083EBB8 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		087CAC2425C25E070083EBB8 /* LearningNumberSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningNumberSetting.swift; sourceTree = "<group>"; };
 		08AADFA425C067DC00D9326E /* MemorizeWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemorizeWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08AADFA725C067DC00D9326E /* MemorizeWordsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeWordsApp.swift; sourceTree = "<group>"; };
 		08AADFA925C067DD00D9326E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +113,22 @@
 				0868398725C1DD1C00CC2D38 /* DoubleStringTuple.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		087CAC1B25C2588A0083EBB8 /* Learning */ = {
+			isa = PBXGroup;
+			children = (
+				087CAC1C25C258A60083EBB8 /* WordChoosingView.swift */,
+			);
+			path = Learning;
+			sourceTree = "<group>";
+		};
+		087CAC2325C25DD20083EBB8 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				087CAC2425C25E070083EBB8 /* LearningNumberSetting.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		08AADF9B25C067DC00D9326E = {
@@ -181,6 +203,8 @@
 		08AADFD225C097EE00D9326E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				087CAC2325C25DD20083EBB8 /* Settings */,
+				087CAC1B25C2588A0083EBB8 /* Learning */,
 				0868398125C1DC4E00CC2D38 /* Word */,
 				08F0A9FA25C1AC4200BE0E59 /* Helpers */,
 				08F0A9FB25C1AC8400BE0E59 /* LearningPage.swift */,
@@ -227,6 +251,7 @@
 			children = (
 				08AADFD925C0986000D9326E /* MultiLabelTableView.swift */,
 				08C24B1325C1CA980051C2C8 /* LeadingAlignmentText.swift */,
+				087CAC2025C25B8F0083EBB8 /* ButtonStyle.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -312,12 +337,15 @@
 				08E7232125C20981007A02E9 /* StringUtils.swift in Sources */,
 				08AC36BD25C1937E00E2F39B /* ViewUtils.swift in Sources */,
 				08C24B1725C1CF480051C2C8 /* Profile.swift in Sources */,
+				087CAC2125C25B8F0083EBB8 /* ButtonStyle.swift in Sources */,
 				0868398825C1DD1C00CC2D38 /* DoubleStringTuple.swift in Sources */,
 				08AADFC825C08D0000D9326E /* RawDataUtils.swift in Sources */,
 				08C24B0F25C1C6DC0051C2C8 /* ModelData.swift in Sources */,
+				087CAC1D25C258A60083EBB8 /* WordChoosingView.swift in Sources */,
 				08E7231825C203A2007A02E9 /* Synonym.swift in Sources */,
 				0868398325C1DCA800CC2D38 /* Definition.swift in Sources */,
 				08AADFAA25C067DD00D9326E /* ContentView.swift in Sources */,
+				087CAC2525C25E070083EBB8 /* LearningNumberSetting.swift in Sources */,
 				08AADFDA25C0986000D9326E /* MultiLabelTableView.swift in Sources */,
 				08F0A9FC25C1AC8400BE0E59 /* LearningPage.swift in Sources */,
 				08AADFA825C067DC00D9326E /* MemorizeWordsApp.swift in Sources */,

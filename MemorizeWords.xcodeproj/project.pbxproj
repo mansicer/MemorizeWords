@@ -13,6 +13,10 @@
 		087CAC1D25C258A60083EBB8 /* WordChoosingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CAC1C25C258A60083EBB8 /* WordChoosingView.swift */; };
 		087CAC2125C25B8F0083EBB8 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CAC2025C25B8F0083EBB8 /* ButtonStyle.swift */; };
 		087CAC2525C25E070083EBB8 /* LearningNumberSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CAC2425C25E070083EBB8 /* LearningNumberSetting.swift */; };
+		087CAC2A25C28A390083EBB8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CAC2925C28A390083EBB8 /* CardView.swift */; };
+		087CAC2D25C28D250083EBB8 /* MultiCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CAC2C25C28D250083EBB8 /* MultiCardView.swift */; };
+		087CAC3025C29D290083EBB8 /* WordRecommender.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 087CAC2F25C29D290083EBB8 /* WordRecommender.mlmodel */; };
+		087CAC3325C29D5C0083EBB8 /* FavoritePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087CAC3225C29D5C0083EBB8 /* FavoritePage.swift */; };
 		08AADFA825C067DC00D9326E /* MemorizeWordsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AADFA725C067DC00D9326E /* MemorizeWordsApp.swift */; };
 		08AADFAA25C067DD00D9326E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AADFA925C067DD00D9326E /* ContentView.swift */; };
 		08AADFAC25C067DF00D9326E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08AADFAB25C067DF00D9326E /* Assets.xcassets */; };
@@ -51,6 +55,10 @@
 		087CAC1C25C258A60083EBB8 /* WordChoosingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordChoosingView.swift; sourceTree = "<group>"; };
 		087CAC2025C25B8F0083EBB8 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		087CAC2425C25E070083EBB8 /* LearningNumberSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningNumberSetting.swift; sourceTree = "<group>"; };
+		087CAC2925C28A390083EBB8 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		087CAC2C25C28D250083EBB8 /* MultiCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiCardView.swift; sourceTree = "<group>"; };
+		087CAC2F25C29D290083EBB8 /* WordRecommender.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WordRecommender.mlmodel; sourceTree = SOURCE_ROOT; };
+		087CAC3225C29D5C0083EBB8 /* FavoritePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePage.swift; sourceTree = "<group>"; };
 		08AADFA425C067DC00D9326E /* MemorizeWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemorizeWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08AADFA725C067DC00D9326E /* MemorizeWordsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemorizeWordsApp.swift; sourceTree = "<group>"; };
 		08AADFA925C067DD00D9326E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -119,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				087CAC1C25C258A60083EBB8 /* WordChoosingView.swift */,
+				087CAC2925C28A390083EBB8 /* CardView.swift */,
+				087CAC2C25C28D250083EBB8 /* MultiCardView.swift */,
 			);
 			path = Learning;
 			sourceTree = "<group>";
@@ -157,6 +167,7 @@
 				08AADFA725C067DC00D9326E /* MemorizeWordsApp.swift */,
 				08AADFAB25C067DF00D9326E /* Assets.xcassets */,
 				08AADFB025C067DF00D9326E /* Info.plist */,
+				087CAC2F25C29D290083EBB8 /* WordRecommender.mlmodel */,
 				08AADFAD25C067DF00D9326E /* Preview Content */,
 			);
 			path = MemorizeWords;
@@ -211,6 +222,7 @@
 				08F0A9FE25C1ADA200BE0E59 /* SettingsPage.swift */,
 				08F0AA0125C1B03E00BE0E59 /* WordListPage.swift */,
 				08AADFA925C067DD00D9326E /* ContentView.swift */,
+				087CAC3225C29D5C0083EBB8 /* FavoritePage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -340,13 +352,16 @@
 				087CAC2125C25B8F0083EBB8 /* ButtonStyle.swift in Sources */,
 				0868398825C1DD1C00CC2D38 /* DoubleStringTuple.swift in Sources */,
 				08AADFC825C08D0000D9326E /* RawDataUtils.swift in Sources */,
+				087CAC3025C29D290083EBB8 /* WordRecommender.mlmodel in Sources */,
 				08C24B0F25C1C6DC0051C2C8 /* ModelData.swift in Sources */,
 				087CAC1D25C258A60083EBB8 /* WordChoosingView.swift in Sources */,
 				08E7231825C203A2007A02E9 /* Synonym.swift in Sources */,
+				087CAC2A25C28A390083EBB8 /* CardView.swift in Sources */,
 				0868398325C1DCA800CC2D38 /* Definition.swift in Sources */,
 				08AADFAA25C067DD00D9326E /* ContentView.swift in Sources */,
 				087CAC2525C25E070083EBB8 /* LearningNumberSetting.swift in Sources */,
 				08AADFDA25C0986000D9326E /* MultiLabelTableView.swift in Sources */,
+				087CAC2D25C28D250083EBB8 /* MultiCardView.swift in Sources */,
 				08F0A9FC25C1AC8400BE0E59 /* LearningPage.swift in Sources */,
 				08AADFA825C067DC00D9326E /* MemorizeWordsApp.swift in Sources */,
 				08E7231B25C205A8007A02E9 /* Phrase.swift in Sources */,
@@ -359,6 +374,7 @@
 				08E7231525C201B1007A02E9 /* Cognate.swift in Sources */,
 				0868398C25C1DD8C00CC2D38 /* DefinationView.swift in Sources */,
 				08C24B1425C1CA980051C2C8 /* LeadingAlignmentText.swift in Sources */,
+				087CAC3325C29D5C0083EBB8 /* FavoritePage.swift in Sources */,
 				08AADFD025C093F300D9326E /* MultiClassBlock.swift in Sources */,
 				08E7231E25C2068D007A02E9 /* Discrimination.swift in Sources */,
 				08F0A9FF25C1ADA200BE0E59 /* SettingsPage.swift in Sources */,

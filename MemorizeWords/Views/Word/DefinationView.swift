@@ -26,7 +26,9 @@ struct DefinitionView: View {
                     leadingItemWidth: 50,
                     alignment: .leading
                 )
-                Divider()
+                if idx < definition.definations.count - 1 {
+                    Divider()
+                }
             }
         }
         else {

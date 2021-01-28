@@ -15,7 +15,7 @@ struct LearningNumberSettingView: View {
         List {
             Text("选择每次想要学习的单词量")
             Picker("learningNumberSetting",
-                   selection: $modelData.profile.numOfWordEveryLearning) {
+                   selection: $modelData.profile.numOfWordEveryLearningIndex) {
                 ForEach(numOfWordRange.indices) {
                     idx in
                     Text("\(numOfWordRange[idx])")

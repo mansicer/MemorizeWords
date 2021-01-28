@@ -8,6 +8,12 @@
 import SwiftUI
 
 class ViewUtils {
+    static func getBackgroundImage(_ filename: String) -> some View {
+        Image(filename)
+            .resizable()
+            .scaledToFill()
+            .edgesIgnoringSafeArea(.all)
+    }
     static func getBlurBackgroundImage(_ filename: String) -> some View {
         Image(filename)
             .resizable()

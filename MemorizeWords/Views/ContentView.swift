@@ -12,6 +12,7 @@ struct ContentView: View {
     
     enum Tab {
         case start
+        case favorite
         case wordList
         case settings
     }
@@ -23,6 +24,11 @@ struct ContentView: View {
                     Label("学习", systemImage: "house.fill")
                 }
                 .tag(Tab.start)
+            FavoritePage()
+                .tabItem {
+                    Label("为你推荐", systemImage: "heart.fill")
+                }
+                .tag(Tab.favorite)
             WordListPage()
                 .tabItem {
                     Label("单词表", systemImage: "list.bullet")

@@ -14,7 +14,11 @@ struct WordChoosingView: View {
     
     var body: some View {
         VStack {
-            NavigationLink(destination: Text("LearningDetail"), tag: 1, selection: $action) {
+            NavigationLink(
+                destination: MultiCardView(words: words),
+                tag: 1,
+                selection: $action
+            ) {
                 EmptyView()
             }
             List {
@@ -28,7 +32,7 @@ struct WordChoosingView: View {
                 }
             }
         }
-        .navigationTitle("今天学习的单词: ")
+        .navigationTitle("今天学习的单词")
         .navigationBarTitleDisplayMode(.automatic)
         .navigationBarItems(trailing: Button(action: {
             action = 1

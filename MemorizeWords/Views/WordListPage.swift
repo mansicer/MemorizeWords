@@ -10,6 +10,7 @@ import SwiftUI
 struct WordListPage: View {
     @EnvironmentObject var modelData: ModelData
     @State private var showRecognizedFirstly = false
+    
     var filteredVocabulary: [Word] {
         if showRecognizedFirstly {
             return modelData.TOEFLVocabulary.sorted {
